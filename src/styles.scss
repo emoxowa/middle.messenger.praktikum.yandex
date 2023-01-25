@@ -3,8 +3,11 @@
 @import '../static/styles/vars';
 @import '../static/styles/mixins';
 
-#root {
+* {
   font-family: 'Inter', Arial, sans-serif;
+}
+
+#root {
   margin: 0 auto;
   height: 100vh;
   color: $color-dark;
@@ -20,6 +23,3 @@
   }
 }
 
-// * {
-//   border: 1px solid red;
-// }

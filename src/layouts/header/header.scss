@@ -2,13 +2,18 @@
 @import '../../../static/styles/vars';
 
 .header {
-  
+  color: $color-primary;
   &__links {
     @include flex();
-    gap: 5px;
+    margin: 0;
+    gap: 20px;
   }
   &__link {
-    color: $color-primary;
-    margin: 10px;
+    list-style: none;
+    margin: 10px 0;
   }
+}
+
+.link {
+  color: $color-primary;
 }

@@ -1,7 +1,8 @@
 @import '../../../static/styles/mixins';
 
 .avatar {
-  @include box(47px);
+  display: block;
+  @include box(130px);
   margin: 0 auto;
   border-radius: 50%;
 }

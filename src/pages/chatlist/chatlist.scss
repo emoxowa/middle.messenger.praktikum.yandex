@@ -31,7 +31,7 @@
 
 .search-form {
   width: 100%;
-  margin: 0;
+  margin: 0 20px 0 0;
   &__input {
     @include font-size(12);
     border: none;

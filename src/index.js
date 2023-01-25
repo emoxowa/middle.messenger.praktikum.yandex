@@ -2,13 +2,13 @@ import header from "./layouts/header";
 import template from "./index.hbs";
 
 //pages
+import chatlist from "./pages/chatlist";
 import login from './pages/login';
 import registration from "./pages/registration";
 import profile from "./pages/profile";
 import changeInfo from "./pages/changeInfo";
 import changePassword from "./pages/changePassword";
 import error from "./pages/error";
-import chatlist from "./pages/chatlist";
 
 //components 
 import button from "./components/button";
@@ -79,7 +79,12 @@ function registerPage() {
 function getProfilePage() {
   return template({
     page: profile({
+      email: "pochta@yandex.ru",
+      login: "ivanivanov",
       first_name: "Иван",
+      second_name: "Иванов",
+      display_name: "Иван",
+      phone: "+7(909)9673030",
       avatar: avatar("images/avatar.png"),
     }),
   });
@@ -88,6 +93,12 @@ function getProfilePage() {
 function updateProfileInfoPage() {
   return template({
     page: changeInfo({
+      email: "pochta@yandex.ru",
+      login: "ivanivanov",
+      first_name: "Иван",
+      second_name: "Иванов",
+      display_name: "Иван",
+      phone: "+7(909)9673030",
       button: button("Сохранить"),
       avatar: avatar("images/avatar.png"),
     }),

@@ -30,12 +30,25 @@
     width: 510px;
     margin: 0;
   }
-  &__avatar {
+  &__avatar-container {
+    @include flex();
+    position: absolute;
+    margin: 0 auto;
     @include box(130px);
-    @include push--auto;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
     &:hover {
-      background-color: rgba(0, 0, 0, .8);
+      background-color: rgba(0, 0, 0, .5);
       cursor: pointer;
+    }
+    &:hover::after {
+      content: 'Поменять аватар';
+      @include font-size(16);
+      position: absolute;
+      @include push--auto();
+      color: $color-light;
+      text-align: center;
     }
   }
   &__title {
@@ -65,6 +78,7 @@
     text-align: end;
     &:focus {
       outline: none;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
     }
   }
   &__space {

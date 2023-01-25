@@ -7,30 +7,33 @@
   </div>
   <div class="profile__right-block">
     <form action="" class="profile__form">
-      {{{ avatar }}}
+      <div class="profile__avatar-container">
+        {{{ avatar }}}
+      </div>
+      <h2 class="profile__title"></h2>
       <label class="profile__input-title">
         Почта
-        <input type="email" name="email" class="profile__input" placeholder="pochta@yandex.ru" value="pochta@yandex.ru">
+        <input type="email" name="email" class="profile__input" value={{email}}>
       </label>
       <label class="profile__input-title">
         Логин
-        <input type="text" name="login" class="profile__input" placeholder="ivanivanov" value="ivanivanov">
+        <input type="text" name="login" class="profile__input" value={{login}}>
       </label>
       <label class="profile__input-title">
         Имя
-        <input type="text" name="name" class="profile__input" placeholder="Иван" value="Иван" >
+        <input type="text" name="name" class="profile__input" value={{first_name}} >
       </label>
       <label class="profile__input-title">
         Фамилия
-        <input type="text" name="surname" class="profile__input" placeholder="Иванов" value="Иванов">
+        <input type="text" name="surname" class="profile__input" value={{second_name}}>
       </label>
       <label class="profile__input-title">
         Имя в чате
-        <input type="text" name="nickname" class="profile__input" placeholder="Иван" value="Иван">
+        <input type="text" name="nickname" class="profile__input" value={{display_name}}>
       </label>
       <label class="profile__input-title">
         Телефон
-        <input type="tel" name="phone" class="profile__input" placeholder="+7(909)9673030" value="+7(909)9673030">
+        <input type="tel" name="phone" class="profile__input" value={{phone}}>
       </label>
       <div class="profile__space"></div>
       {{{ button }}}
