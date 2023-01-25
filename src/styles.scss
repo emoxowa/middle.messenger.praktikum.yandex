@@ -1,0 +1,25 @@
+@import '../static/styles/vendor';
+@import '../static/styles/fonts';
+@import '../static/styles/vars';
+@import '../static/styles/mixins';
+
+#root {
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0 auto;
+  height: 100vh;
+  color: $color-dark;
+  min-width: 320px;
+}
+
+.link {
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.2s linear;
+  }
+}
+
+// * {
+//   border: 1px solid red;
+// }

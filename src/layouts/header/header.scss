@@ -1,0 +1,14 @@
+@import '../../../static/styles/mixins';
+@import '../../../static/styles/vars';
+
+.header {
+  
+  &__links {
+    @include flex();
+    gap: 5px;
+  }
+  &__link {
+    color: $color-primary;
+    margin: 10px;
+  }
+}

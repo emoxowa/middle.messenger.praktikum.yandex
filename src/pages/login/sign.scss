@@ -1,0 +1,76 @@
+
+@import '../../../static/styles/mixins';
+@import '../../../static/styles/vars';
+
+.sign {
+  background-image: $bi-primary-gradient;
+  @include flex();
+  height: 100%;
+  &__form {
+    @include flex(start);
+    flex-direction: column;
+    width: 280px;
+    font-weight: 500;
+    background-color: $color-light;
+    padding: 50px 30px 30px;
+    border-radius: 10px;
+    min-height: 380px;
+    margin: 0;
+  }
+  &__input-container {
+    margin-bottom: 146px;
+  }
+  &__title {
+    @include font-size(20);
+    font-weight: 500;
+    margin:  0 auto 40px;
+  }
+  &__input-group {
+    position: relative;
+    margin-bottom: 23px;
+  }
+  &__input-placeholder {
+    position: absolute;
+    left: 0px;
+    top: 7px;
+    @include font-size(13);
+    color: $color-secondary;
+    transition: top 0.3s;
+    pointer-events: none;
+
+  }
+  &__input {
+    @include font-size(13);
+    background-color: transparent;
+    width: 280px;
+    padding: 7px 0;
+    border: none;
+    color: $color-dark;
+    border-bottom: 1px solid $color-primary;
+    outline: none;
+    &:focus {
+      border-bottom: 2px solid $color-primary;
+    }
+    &:focus ~ .sign__input-placeholder, 
+    &:valid ~ .sign__input-placeholder {
+      top: -9px;
+      @include font-size(9);
+      border-radius: 10px;
+    }
+  }
+  &__button {
+    @include push--auto;
+    @include font-size(13);
+    border: none;
+    background-color: $color-primary;
+    border-radius: 10px;
+    color: $color-light;
+    @include box(280px, 37px);
+  }
+  &__link {
+    @include push--auto;
+    @include font-size(11);
+    color: $color-primary;
+    margin-top: 14px;
+  }
+}

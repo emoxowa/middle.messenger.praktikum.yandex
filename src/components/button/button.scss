@@ -1,0 +1,12 @@
+@import '../../../static/styles/mixins';
+@import '../../../static/styles/vars';
+
+.button {
+  @include push--auto;
+  @include font-size(13);
+  border: none;
+  background-color: $color-primary;
+  border-radius: 10px;
+  color: $color-light;
+  @include box(280px, 37px);
+}
