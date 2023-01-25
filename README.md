@@ -22,11 +22,10 @@
     npm run start
 
 ## Дизайн-макет
-
 [Макет в Figma](https://www.figma.com/file/iSkkyL6yvadZg6JPjxtV6b/messenger?node-id=0%3A1&t=tdvPHOxGD5h6W4rK-1)
 
 ## Ссылка на Netlify
 [Netlify](https://cozy-caramel-d832c3.netlify.app/)
-## Pull requests
 
-[Sprint 1]()
+## Pull requests
+[Sprint 1](https://github.com/emoxowa/middle.messenger.praktikum.yandex/pull/2)
