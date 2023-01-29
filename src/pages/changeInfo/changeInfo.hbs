@@ -1,0 +1,42 @@
+<section class="profile">
+  <div class="profile__left-block">
+    <a href="/profile" class="link">
+    <div class="profile__round-link">
+    </div>
+    </a>
+  </div>
+  <div class="profile__right-block">
+    <form action="" class="profile__form">
+      <div class="profile__avatar-container">
+        {{{ avatar }}}
+      </div>
+      <h2 class="profile__title"></h2>
+      <label class="profile__input-title">
+        Почта
+        <input type="email" name="email" class="profile__input" value={{email}}>
+      </label>
+      <label class="profile__input-title">
+        Логин
+        <input type="text" name="login" class="profile__input" value={{login}}>
+      </label>
+      <label class="profile__input-title">
+        Имя
+        <input type="text" name="first_name" class="profile__input" value={{first_name}} >
+      </label>
+      <label class="profile__input-title">
+        Фамилия
+        <input type="text" name="second_name" class="profile__input" value={{second_name}}>
+      </label>
+      <label class="profile__input-title">
+        Имя в чате
+        <input type="text" name="display_name" class="profile__input" value={{display_name}}>
+      </label>
+      <label class="profile__input-title">
+        Телефон
+        <input type="tel" name="phone" class="profile__input" value={{phone}}>
+      </label>
+      <div class="profile__space"></div>
+      {{{ button }}}
+    </form>
+  </div>
+</section>

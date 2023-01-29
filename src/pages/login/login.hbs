@@ -1,0 +1,17 @@
+<section class="sign">
+  <form class="sign__form" novalidate>
+    <h2 class="sign__title">{{title}}</h2>
+    <fieldset class="sign__input-container">
+      <fieldset class="sign__input-group">
+        <input required type="text" name='login' class="sign__input" placeholder="">
+        <label class="sign__input-placeholder">Логин</label>
+      </fieldset>
+      <fieldset class="sign__input-group">
+        <input required type="password" name='password' class="sign__input" placeholder="">
+        <label class="sign__input-placeholder">Пароль</label>
+      </fieldset>
+    </fieldset>
+    {{{button}}}
+    <a href="/signup" class="sign__link link">{{sign_link}}</a>
+  </form>
+</section>

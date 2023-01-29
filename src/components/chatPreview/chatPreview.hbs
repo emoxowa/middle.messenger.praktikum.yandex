@@ -1,0 +1,16 @@
+
+<li class='chat-preview'>
+    {{#if avatarPath}}
+    <img src="{{avatarPath}}" alt="изображение пользователя" class="chat-preview__avatar">
+    {{else}}
+    <img src="images/avatar.png" alt="изображение отсутствует">
+    {{/if}}
+  <div class='chat-preview__info'> 
+    <h3 class='chat-preview__title'>{{title}}</h3>
+    <p class='chat-preview__last-message'>{{last_message}}</p>
+  </div>
+  <div class='chat-preview__container'>
+    <p class='chat-preview__last-message-time'>{{time}}</p>
+    <div class='chat-preview__unread-count'>{{unread_count}}</div>
+  </div>
+</li>
