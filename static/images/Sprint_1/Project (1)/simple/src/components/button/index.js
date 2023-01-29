@@ -4,6 +4,4 @@ import './style.css';
 
 Handlebars.registerPartial('button', tpl);
 
-export default (id, value) => {
-	return Handlebars.compile(tpl)({ id, value });
-}
+export default (id, value) => Handlebars.compile(tpl)({ id, value });

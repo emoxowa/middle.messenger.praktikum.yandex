@@ -1,6 +1,4 @@
-import tpl from "./burgerMenu.hbs";
-import "./burgerMenu.scss";
+import tpl from './burgerMenu.hbs';
+import './burgerMenu.scss';
 
-export default (props = {}) => {
-  return tpl(props);
-};
+export default (props = {}) => tpl(props);

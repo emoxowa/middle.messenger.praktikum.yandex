@@ -1,6 +1,4 @@
-import tpl from "./profile.hbs";
-import "./profile.scss";
+import tpl from './profile.hbs';
+import './profile.scss';
 
-export default (props = {}) => {
-  return tpl(props);
-};
+export default (props = {}) => tpl(props);

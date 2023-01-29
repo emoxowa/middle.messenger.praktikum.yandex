@@ -1,6 +1,4 @@
-import tpl from "./header.hbs";
-import "./header.scss";
+import tpl from './header.hbs';
+import './header.scss';
 
-export default (props = {}) => {
-  return tpl(props);
-};
+export default (props = {}) => tpl(props);

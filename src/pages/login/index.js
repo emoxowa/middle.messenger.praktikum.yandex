@@ -1,6 +1,4 @@
-import tpl from "./login.hbs";
-import "./sign.scss";
+import tpl from './login.hbs';
+import './sign.scss';
 
-export default (props = {}) => {
-  return tpl(props);
-};
+export default (props = {}) => tpl(props);

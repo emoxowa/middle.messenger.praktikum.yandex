@@ -1,6 +1,4 @@
-import tpl from "./avatar.hbs";
-import "./avatar.scss";
+import tpl from './avatar.hbs';
+import './avatar.scss';
 
-export default (path) => {
-  return tpl({ path });
-};
+export default (path) => tpl({ path });

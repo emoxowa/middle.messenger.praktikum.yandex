@@ -1,6 +1,4 @@
-import tpl from "./chatlist.hbs";
-import "./chatlist.scss";
+import tpl from './chatlist.hbs';
+import './chatlist.scss';
 
-export default (props = {}) => {
-  return tpl(props);
-};
+export default (props = {}) => tpl(props);

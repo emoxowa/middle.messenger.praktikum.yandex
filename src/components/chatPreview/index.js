@@ -1,12 +1,10 @@
-import tpl from "./chatPreview.hbs";
-import "./chatPreview.scss";
+import tpl from './chatPreview.hbs';
+import './chatPreview.scss';
 
-export default (title='', last_message='', time='', unread_count='', avatarPath) => {
-  return tpl({
-    title,
-    last_message,
-    time,
-    unread_count,
-    avatarPath,
-  });
-};
+export default (title, lastMessage, time, unreadMessages, avatarPath) => tpl({
+  title,
+  lastMessage,
+  time,
+  unreadMessages,
+  avatarPath,
+});
