@@ -1,95 +1,129 @@
-@import '../../../static/styles/mixins';
-@import '../../../static/styles/vars';
+@import "../../../static/styles/mixins";
+@import "../../../static/styles/vars";
 
 .profile {
-  @include flex();
+  @include flex;
+
   font-weight: 500;
   height: 100%;
+
   &__left-block {
-    @include flex();
+    @include flex;
+
     width: 5vw;
     background-image: $bi-primary-gradient;
     height: 100%;
   }
+
   &__right-block {
-    @include flex();
+    @include flex;
+
     width: 95vw;
   }
+
   &__round-link {
-    @include flex();
+    @include flex;
     @include box(28px);
+
     background-color: $color-primary;
     border-radius: 50;
     background-image: url("../../../static/images/icon_left-arrow.svg");
+
     @include cover-background;
+
     background-size: 50%;
   }
+
   &__form {
     @include flex(start);
+
     flex-direction: column;
     width: 510px;
     margin: 0;
   }
+
   &__avatar-container {
-    @include flex();
-    position: absolute;
+    @include flex;
+
     margin: 0 auto;
+
     @include box(130px);
+
     border-radius: 50%;
     position: relative;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgb(0 0 0 / 5%);
+
     &:hover {
-      background-color: rgba(0, 0, 0, .5);
+      background-color: rgb(0 0 0 / 50%);
       cursor: pointer;
     }
+
     &:hover::after {
-      content: 'Поменять аватар';
+      content: "Поменять аватар";
+
       @include font-size(16);
+
       position: absolute;
-      @include push--auto();
+
+      @include push--auto;
+
       color: $color-light;
       text-align: center;
     }
   }
+
   &__title {
     @include font-size(16, 16, medium);
     @include push--auto;
+
     margin-top: 21px;
     margin-bottom: 50px;
   }
+
   &__input-title {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     @include font-size(13);
+
     width: 100%;
     border-bottom: 1px solid $color-tertiary-line;
+
     &:last-child {
       border-bottom: none;
     }
   }
+
   &__input {
     @include font-size(13);
+
     color: $color-secondary;
     padding: 10px 0;
     border: none;
     background-color: transparent;
     width: 65%;
     text-align: end;
+
     &:focus {
       outline: none;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 10px rgb(0 0 0 / 5%);
     }
   }
+
   &__space {
     height: 50px;
   }
+
   &__link {
     width: 100%;
+
     @include font-size(13);
+
     color: $color-primary;
     border-bottom: 1px solid $color-tertiary-line;
     padding: 10px 0;
+
     &:last-child {
       border-bottom: none;
     }

@@ -1,13 +1,16 @@
-@import '../../../static/styles/mixins';
-@import '../../../static/styles/vars';
+@import "../../../static/styles/mixins";
+@import "../../../static/styles/vars";
 
 .header {
   color: $color-primary;
+
   &__links {
-    @include flex();
+    @include flex;
+
     margin: 0;
     gap: 20px;
   }
+
   &__link {
     list-style: none;
     margin: 10px 0;

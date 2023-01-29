@@ -1,13 +1,15 @@
-
-@import '../../../static/styles/mixins';
-@import '../../../static/styles/vars';
+@import "../../../static/styles/mixins";
+@import "../../../static/styles/vars";
 
 .sign {
+  @include flex;
+
   background-image: $bi-primary-gradient;
-  @include flex();
   height: 100%;
+
   &__form {
     @include flex(start);
+
     flex-direction: column;
     width: 280px;
     font-weight: 500;
@@ -16,17 +18,21 @@
     border-radius: 10px;
     margin: 0;
   }
+
   &__input-container {
     margin: 0;
     margin-bottom: 47px;
     border: none;
     padding: 0;
   }
+
   &__title {
     @include font-size(20);
+
     font-weight: 500;
-    margin:  0 auto 40px;
+    margin: 0 auto 40px;
   }
+
   &__input-group {
     position: relative;
     margin: 0;
@@ -34,18 +40,21 @@
     border: none;
     margin-bottom: 23px;
   }
+
   &__input-placeholder {
-    position: absolute;
-    left: 0px;
-    top: 7px;
     @include font-size(13);
+
+    position: absolute;
+    left: 0;
+    top: 7px;
     color: $color-secondary;
     transition: top 0.3s;
     pointer-events: none;
-
   }
+
   &__input {
     @include font-size(13);
+
     background-color: transparent;
     width: 280px;
     padding: 7px 0;
@@ -53,28 +62,35 @@
     color: $color-dark;
     border-bottom: 1px solid $color-primary;
     outline: none;
+
     &:focus {
       border-bottom: 2px solid $color-primary;
     }
-    &:focus ~ .sign__input-placeholder, 
-    &:valid ~ .sign__input-placeholder {
-      top: -9px;
+
+    &:focus ~ &__input-placeholder,
+    &:valid ~ &__input-placeholder {
       @include font-size(9);
+
+      top: -9px;
       border-radius: 10px;
     }
   }
+
   &__button {
     @include push--auto;
     @include font-size(13);
+    @include box(280px, 37px);
+
     border: none;
     background-color: $color-primary;
     border-radius: 10px;
     color: $color-light;
-    @include box(280px, 37px);
   }
+
   &__link {
     @include push--auto;
     @include font-size(11);
+
     color: $color-primary;
     margin-top: 14px;
   }

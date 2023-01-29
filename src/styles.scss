@@ -1,10 +1,10 @@
-@import '../static/styles/vendor';
-@import '../static/styles/fonts';
-@import '../static/styles/vars';
-@import '../static/styles/mixins';
+@import "../static/styles/vendor";
+@import "../static/styles/fonts";
+@import "../static/styles/vars";
+@import "../static/styles/mixins";
 
 * {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
 }
 
 #root {
@@ -16,10 +16,10 @@
 
 .link {
   text-decoration: none;
+
   &:hover {
     cursor: pointer;
     opacity: 0.8;
     transition: 0.2s linear;
   }
 }
-

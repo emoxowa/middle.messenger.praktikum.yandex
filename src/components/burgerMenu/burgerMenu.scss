@@ -1,5 +1,5 @@
-@import '../../../static/styles/mixins';
-@import '../../../static/styles/vars';
+@import "../../../static/styles/mixins";
+@import "../../../static/styles/vars";
 
 .burger-menu {
   width: 31px;
@@ -8,6 +8,7 @@
   border-radius: 5px;
   background-color: $color-secondary;
   cursor: pointer;
+
   &::before {
     content: "";
     position: absolute;
@@ -17,7 +18,8 @@
     border-radius: 5px;
     transform: translateY(-8px);
     transition: 0.5s;
-    }
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -27,5 +29,5 @@
     border-radius: 5px;
     transform: translateY(8px);
     transition: 0.5s;
-    }
+  }
 }

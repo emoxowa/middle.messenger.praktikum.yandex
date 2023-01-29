@@ -1,12 +1,13 @@
 @mixin font-face($font-name, $path, $weight: normal, $style: normal) {
   @font-face {
-    font-family: quote($font-name);
+    font-family: string.quote($font-name);
     font-weight: $weight;
     font-style: $style;
     font-display: swap;
-    src: url($path+'.woff2') format("woff2"),
-         url($path+'.woff') format("woff"),
-         url($path+'.ttf') format('truetype');
+    src:
+      url($path + '.woff2') format("woff2"),
+      url($path + '.woff') format("woff"),
+      url($path + '.ttf') format("truetype");
   }
 }
 
@@ -25,11 +26,11 @@
   justify-content: $direction;
 }
 
-@mixin push--auto {
-    margin: { 
-        left: auto;
-        right: auto;
-    }
+@mixin push-auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
 }
 
 @mixin cover-background {
@@ -39,11 +40,11 @@
 }
 
 @mixin fade($type) {
-  @if $type== "hide" {
+  @if $type == "hide" {
     visibility: hidden;
     opacity: 0;
     transition: visibility 1s, opacity 1s;
-  } @else if $type== "show" {
+  } @else if $type == "show" {
     visibility: visible;
     opacity: 1;
     transition: visibility 1s, opacity 1s;
@@ -51,28 +52,27 @@
 }
 
 @mixin rul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-//Media queries
+// Media queries
 
 @mixin tablet {
-  @media only screen and (min-width: $tablet ) {
+  @media only screen and (min-width: $tablet) {
     @content;
   }
 }
 
 @mixin large {
-  @media only screen and (min-width: $large ) {
+  @media only screen and (min-width: $large) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media only screen and (min-width: $desktop ) {
+  @media only screen and (min-width: $desktop) {
     @content;
   }
 }
-

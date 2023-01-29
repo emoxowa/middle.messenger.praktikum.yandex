@@ -1,28 +1,35 @@
-@import '../../../static/styles/mixins';
-@import '../../../static/styles/vars';
+@import "../../../static/styles/mixins";
+@import "../../../static/styles/vars";
 
 .page-error {
-    @include flex();
-    height: 100%;
-    flex-direction: column;
-    background-image: $bi-primary-gradient;
-    &__title {
-        @include font-size(40);
-        font-weight: 500px;
-        color: $color-dark;
-        margin: 0;
-    }
-    &__subtitle {
-        @include font-size(20);
-        font-weight: 500px;
-        color: $color-dark;
-        margin-top: 20px;
-        margin-bottom: 69px;
-    }
-    &__link {
-        @include font-size(11);
-        font-weight: 500px;
-        text-decoration: none;
-        color: $color-primary;
-    }
+  @include flex;
+
+  height: 100%;
+  flex-direction: column;
+  background-image: $bi-primary-gradient;
+
+  &__title {
+    @include font-size(40);
+
+    font-weight: 500px;
+    color: $color-dark;
+    margin: 0;
+  }
+
+  &__subtitle {
+    @include font-size(20);
+
+    font-weight: 500px;
+    color: $color-dark;
+    margin-top: 20px;
+    margin-bottom: 69px;
+  }
+
+  &__link {
+    @include font-size(11);
+
+    font-weight: 500px;
+    text-decoration: none;
+    color: $color-primary;
+  }
 }

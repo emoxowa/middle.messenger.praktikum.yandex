@@ -1,17 +1,23 @@
-@import '../../../static/styles/mixins';
-@import '../../../static/styles/vars';
+@import "../../../static/styles/mixins";
+@import "../../../static/styles/vars";
 
 .chatlist {
-  @include flex();
+  @include flex;
+
   height: 100vh;
+
   &__chat-space {
     width: 73.5%;
     height: 100%;
-    @include flex();
+
+    @include flex;
+
     background-color: $color-primary-bg;
   }
+
   &__text {
     @include font-size(12);
+
     color: $color-secondary;
   }
 }
@@ -20,9 +26,11 @@
   width: 26.5%;
   background-image: $bi-primary-gradient;
   height: 100%;
-  padding: 0 25px 0;
+  padding: 0 25px;
+
   &__header {
-    @include flex();
+    @include flex;
+
     justify-content: flex-start;
     padding: 20px 0 14px;
     gap: 11px;
@@ -32,14 +40,17 @@
 .search-form {
   width: 100%;
   margin: 0 20px 0 0;
+
   &__input {
     @include font-size(12);
+
     border: none;
     padding: 12px;
     border-radius: 10px;
     background-color: $color-light;
     outline: none;
     width: 100%;
+
     &::placeholder {
       background-image: url("../../../static/images/icon_loupe.svg");
       background-repeat: no-repeat;
@@ -52,6 +63,7 @@
 .chat-preview-list {
   list-style: none;
   padding: 0;
+
   &:last-child {
     border-bottom: 1px solid $color-tertiary-line;
   }

@@ -1,5 +1,5 @@
-@import '../../../static/styles/mixins';
-@import '../../../static/styles/vars';
+@import "../../../static/styles/mixins";
+@import "../../../static/styles/vars";
 
 .chat-preview {
   height: 62px;
@@ -10,41 +10,56 @@
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+
   &__avatar {
     @include box(47px);
+
     border-radius: 50%;
   }
+
   &__info {
     width: 80%;
   }
+
   &__title {
     @include font-size(13, 13 medium);
+
     margin: 0 0 4px;
     color: $color-dark;
   }
+
   &__last-message {
     @include font-size(12, 15);
+
     color: $color-secondary;
     margin: 0;
   }
+
   &__container {
     height: 47px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
+
   &__last-message-time {
     margin: 0;
-    @include font-size(9, 13);
-    color: $color-secondary;
 
+    @include font-size(9, 13);
+
+    color: $color-secondary;
   }
+
   &__unread-count {
     margin: 0 auto;
-    @include flex();
+
+    @include flex;
+
     border-radius: 50%;
+
     @include font-size(11, 12);
     @include box(20px);
+
     background-color: $color-primary;
     color: $color-light;
   }

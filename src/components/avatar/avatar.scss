@@ -1,8 +1,10 @@
-@import '../../../static/styles/mixins';
+@import "../../../static/styles/mixins";
 
 .avatar {
   display: block;
+
   @include box(130px);
+
   margin: 0 auto;
   border-radius: 50%;
 }
